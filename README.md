@@ -2,7 +2,7 @@
 ## 8-Dahlia
 ## Maryanne Kristine N. Lazado
 
-* LINKS:
+### LINKS:
 
 [Lazado_MaryanneKristine_Distance.py](q1/Lazado_MaryanneKristine_Distance.py)
 
