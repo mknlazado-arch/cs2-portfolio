@@ -13,3 +13,7 @@
 [score_checker.md](q1/score_checker.md)
 
 [score_checker.py](q1/score_checker.py)
+
+[input_validation.md](q1/input_validation.md)
+
+[workshop_validator.py](q1/workshop_validator.py)
