@@ -90,47 +90,99 @@ It should **not request passwords, OTPs, banking information, or unnecessary per
 ---
 ## Final Code
 ```python
-# Paste your final program here.
+# # Get the needed information.
+name = str(input("Please give me your name: "))
+while name.strip() == "":
+    print("Student name is required.")
+    name = input("Please give me your name: ")
+    
+print("Valid.")
+section = str(input("Please enter your section: "))
+if section == "Dahlia":
+   print("Valid.")
+elif section == "Sampaguita":
+   print("Valid.")
+elif section == "Ilang Ilang":
+   print("Valid.")
+elif section == "Rosal":
+   print("Valid.")
+else:
+  print("Invalid.")
+
+club = str(input("Please enter your club choice: "))
+if club == "Robotics":
+   print("Valid.")
+elif club == "Science":
+   print("Valid.")
+elif club == "Mathematics":
+   print("Valid.")
+elif club == "Programming":
+   print("Valid.")
+else:
+  print("Invalid.")
+
+email = str(input("Please enter your school email: "))
+if "@" not in email or "." not in email:
+  print("Invalid.")
+else:
+  print("Valid.")
+
+attendance = str(input("Please enter the attendance of the student: "))
+if attendance == "Present":
+   print("Valid.")
+elif attendance == "Absent":
+   print("Valid.")
+elif attendance == "Late":
+   print("Valid.")
+else:
+  print("Invalid.")
+
+print("Name: ", name)
+print("Section: ", section)
+print("Club: ", club)
+print("School Email: ", email)
+print("Attendance Status: ", attendance)
+print("If even one of the requirements is invalid, please retry.")
+print("If all are valid, congratulations! You have successfully registered yourself in a club.")
 ```
 ---
 ## Security Practices Applied
 ### Required Input
-> Explain how you handled blank input.
+> I copied my previous code
 ### Allowed Values
-> Explain which fields accept only predefined values.
+> section, club, and attendance
 ### Format Check
-> Explain your simple email validation rule.
+> The email must contain the "@" and "." symbol
 ### Error Messages
-> Explain why clear error messages are useful.
+> It helps us correct our work
 ### Data Minimization
-> Explain what information you intentionally did NOT collect and why.
+> passwords, OTPs, banking information, or unnecessary personal information because it is not needed and it helps keep the students safe from possible threats
 ---
 # Part E - Testing and Reflection
 ## Testing
 | Test | Input Situation | Expected Output | Actual Output | Result |
 |---:|---|---|---|---|
-| 1 | All data valid | | | |
-| 2 | Blank student name | | | |
-| 3 | Invalid section | | | |
-
-| 4 | Invalid club choice | | | |
-| 5 | Email missing `@` | | | |
-| 6 | Email missing `.` | | | |
-| 7 | Invalid attendance status | | | |
-| 8 | Different valid inputs | | | |
+| 1 | All data valid | Valid | Valid | PASS |
+| 2 | Blank student name | Invalid | Invalid | PASS |
+| 3 | Invalid section | Invalid | Invalid | PASS |
+| 4 | Invalid club choice | Invalid | Invalid | PASS |
+| 5 | Email missing `@` | Invalid | Invalid | PASS |
+| 6 | Email missing `.` | Invalid | Invalid | PASS |
+| 7 | Invalid attendance status | Invalid | Invalid | PASS |
+| 8 | Different valid inputs | Valid | Valid | PASS |
 Use:
 - **PASS** if the actual result matches the expected result.
 - **FAIL** if it does not.
 ---
 # Reflection
 ### 1. What is one cybersecurity threat that can affect an application or user?
-> Write your answer here.
+> Asking for unnecessary information from the user
 ### 2. How can users reduce the risk of phishing or suspicious messages?
-> Write your answer here.
+> Become more mindful and do not give your info away
 ### 3. How can validation rules improve the security of user input?
-> Write your answer here.
+> Its helps by protection the user from potential phishing
 ### 4. Why should a program avoid collecting unnecessary personal information?
-> Write your answer here.
+> it helps protect the user from potential phishing
 ### 5. How did SG7's input validation concepts become security practices in SG8?
-> Write your answer here.
+> It helped in the application part
 ---
